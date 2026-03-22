@@ -1,0 +1,11 @@
+student_id,attendance,assignment_score,quiz_score,study_hours,video_watch_time,previous_result,attempts,participation,final_performance
+1,85,78,82,12,6,75,1,7,High
+2,62,55,58,7,3,60,3,5,Low
+3,70,68,72,9,4,65,2,6,Medium
+4,90,88,91,14,7,85,1,8,High
+5,55,50,52,5,2,50,4,4,Low
+6,73,66,69,8,3,64,2,6,Medium
+7,92,91,95,15,8,89,1,9,High
+8,58,52,54,6,2,55,3,5,Low
+9,76,74,75,10,4,71,2,7,Medium
+10,88,86,89,13,6,83,1,8,High
