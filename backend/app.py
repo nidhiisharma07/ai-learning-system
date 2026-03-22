@@ -8,11 +8,13 @@ app = Flask(__name__)
 CORS(app)
 
 # ================= DATABASE CONFIG =================
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///students.db'
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+db_path = os.path.join(BASE_DIR, "students.db")
+
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + db_path
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-
-db = SQLAlchemy(app)
-
 # ================= DATABASE MODELS =================
 
 class User(db.Model):
@@ -172,6 +174,6 @@ def home():
 
 
 # ================= RUN =================
-
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=10000)
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host="0.0.0.0", port=port)
