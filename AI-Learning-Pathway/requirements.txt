@@ -1,8 +1,0 @@
-flask
-flask-cors
-flask-sqlalchemy
-numpy
-pandas
-scikit-learn
-joblib
-gunicorn
